@@ -8,7 +8,7 @@ import com.example.demo.repository.LoginRepo;
 @Service // Tells Spring this is a service class
 public class LoginService {
 
-    @Autowired
+    @Autowired // tells Spring to automatically inject the LoginRepo bean into LoginService class
     private LoginRepo repo; // Injecting the repository to talk to DB
 
     // Authenticates the user
